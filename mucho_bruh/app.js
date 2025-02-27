@@ -8,3 +8,6 @@ console.log(produtos.nomeProdutos());
 
 console.log("Apenas produtos do ciclano");
 console.log(produtos.fornecedorCiclano());
+
+console.log("Total de estoque ocupado");
+console.log(produtos.somarEstoque());

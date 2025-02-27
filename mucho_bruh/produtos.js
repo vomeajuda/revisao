@@ -24,8 +24,14 @@ function fornecedorCiclano() {
     return produtos.filter(produto => produto.fornecedor === "ciclano");
 }
 
+function somarEstoque() {
+    return produtos.reduce((total, produto) => total + produto.qtd_estoque, 0);
+}
+
+
 export default {
     produtos,
     nomeProdutos,
-    fornecedorCiclano
+    fornecedorCiclano,
+    somarEstoque
 };
