@@ -28,10 +28,17 @@ function somarEstoque() {
     return produtos.reduce((total, produto) => total + produto.qtd_estoque, 0);
 }
 
+function mediaEstoque() {
+    const soma = produtos.reduce((total, produto) => total + produto.qtd_estoque, 0);
+
+    return (soma / produtos.length).toFixed(2);
+}
+
 
 export default {
     produtos,
     nomeProdutos,
     fornecedorCiclano,
-    somarEstoque
+    somarEstoque,
+    mediaEstoque
 };

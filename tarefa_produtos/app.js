@@ -11,3 +11,6 @@ console.log(produtos.fornecedorCiclano());
 
 console.log("Total de estoque ocupado");
 console.log(produtos.somarEstoque());
+
+console.log("Media do estoque");
+console.log(produtos.mediaEstoque());
